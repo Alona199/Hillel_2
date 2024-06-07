@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 8px 15px;
     flex-wrap: wrap;
@@ -182,4 +182,67 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Add media queries for responsiveness */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    .shop-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .hero-image {
+        margin: 10px;
+    }
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .shop-button {
+        padding: 12px 25px;
+        font-size: 17px;
+    }
+    .hero {
+        flex-direction: row;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1201px) {
+    body {
+        font-size: 18px;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+    }
+    .shop-button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    .hero {
+        flex-direction: row;
+    }
 }
